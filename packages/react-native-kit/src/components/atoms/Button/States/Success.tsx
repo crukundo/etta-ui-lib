@@ -1,7 +1,7 @@
 import {
   ButtonStateProps,
   Success as CoreSuccess,
-} from '@tecsinapse/react-core';
+} from '@ettawallet/react-core';
 import React, { FC } from 'react';
 import { Text } from '../../Text';
 

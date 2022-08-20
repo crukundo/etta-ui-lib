@@ -1,4 +1,4 @@
-import { ButtonStateProps, Error as CoreError } from '@tecsinapse/react-core';
+import { ButtonStateProps, Error as CoreError } from '@ettawallet/react-core';
 import React, { FC } from 'react';
 import { Text } from '../../Text';
 

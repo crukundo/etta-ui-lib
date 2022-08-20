@@ -1,4 +1,4 @@
-import { Button as ButtonCore, ButtonProps } from '@tecsinapse/react-core';
+import { Button as ButtonCore, ButtonProps } from '@ettawallet/react-core';
 import React, { FC, useCallback } from 'react';
 import { Keyboard } from 'react-native';
 

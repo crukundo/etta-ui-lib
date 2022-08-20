@@ -4,7 +4,7 @@ import {
   FontWeightType,
   StyleProps,
   Text,
-} from '@tecsinapse/react-core';
+} from '@ettawallet/react-core';
 import { Platform } from 'react-native';
 import { TextNativeProps } from './Text';
 
