@@ -1,5 +1,5 @@
 export type Color = {
-  primary: ColorGradation;
+  primary: ColorMode;
   secondary: ColorGradation;
   error: ColorGradation;
   success: ColorGradation;
@@ -75,6 +75,24 @@ export type ColorGradation = {
   xdark: string;
 };
 
+export type ColorMode = {
+  orange: string;
+  red: string;
+  green: string;
+  blue: string;
+  purple: string;
+  white: string;
+  neutral1: string;
+  neutral2: string;
+  neutral3: string;
+  neutral4: string;
+  neutral5: string;
+  neutral6: string;
+  neutral7: string;
+  neutral8: string;
+  black: string;
+};
+
 export type FontStack = {
   default: string;
   mono: string;
@@ -141,7 +159,7 @@ export type FontWeightType = keyof FontWeight;
 
 export type VariantType = 'filled' | 'outlined' | 'text';
 
-export type ColorGradationType = keyof ColorGradation;
+export type ColorGradationType = keyof ColorMode;
 
 export type FontColorType = keyof FontColor;
 

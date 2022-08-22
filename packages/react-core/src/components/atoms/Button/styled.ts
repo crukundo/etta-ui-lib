@@ -8,7 +8,7 @@ const outlineVariant = ({
   theme,
   color = 'primary',
   variant,
-  tone = 'medium',
+  tone = 'orange',
 }: StyleProps & ButtonProps) =>
   variant === 'outlined' &&
   css`
@@ -34,7 +34,7 @@ const sizeStyles = ({ theme, size = 'default' }: StyleProps & ButtonProps) => {
 const StyledButtonBase = styled(PressableSurface)<
   ButtonProps & Partial<StyleProps>
 >`
-  border-radius: ${({ theme, borderRadius = 'mili' }) =>
+  border-radius: ${({ theme, borderRadius = 'micro' }) =>
     theme.borderRadius[borderRadius]};
   flex-direction: row;
   justify-content: center;

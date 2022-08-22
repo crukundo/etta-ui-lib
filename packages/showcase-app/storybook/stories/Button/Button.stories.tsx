@@ -7,13 +7,37 @@ import { ArtBoard } from '../ArtBoard';
 storiesOf('Button', module)
   .addDecorator(getStory => <ArtBoard>{getStory()}</ArtBoard>)
 
-  .add('Button', () => (
+  .add('Default', () => (
     <Button
       variant={select('variant', ['filled', 'outlined', 'text'], 'filled')}
-      onPress={() => console.log('Wow!')}
+      onPress={() => console.log('Ouch!')}
     >
       <Text fontWeight="bold" fontColor="light">
-        I'm a button
+        This is a button
+      </Text>
+    </Button>
+  ))
+  .add('Clickable text', () => (
+    <Button
+      color="primary"
+      variant="text"
+      tone="orange"
+      onPress={() => console.log('Clicked text buttton')}
+    >
+      <Text fontWeight="bold" fontColor="dark">
+        I am a button too
+      </Text>
+    </Button>
+  ))
+  .add('Disabled', () => (
+    <Button
+      color="primary"
+      variant="filled"
+      tone="neutral4"
+      onPress={() => console.log('Ouch, I am disabled!')}
+    >
+      <Text fontWeight="bold" fontColor="dark">
+        A disabled button
       </Text>
     </Button>
   ));

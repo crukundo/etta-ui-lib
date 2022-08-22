@@ -43,7 +43,7 @@ const Button: FC<ButtonProps> = ({
   style,
   color = 'primary',
   variant = 'filled',
-  tone = 'medium',
+  tone = 'orange',
   state = 'default',
   loadingComponent,
   errorComponent,
@@ -76,7 +76,7 @@ const Button: FC<ButtonProps> = ({
   }
 
   if (disabled) {
-    _surfaceColor = theme.color[_color].light;
+    _surfaceColor = theme.color[_color].neutral4;
   }
 
   return (
