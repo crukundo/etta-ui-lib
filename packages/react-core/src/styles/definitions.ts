@@ -128,7 +128,7 @@ export const typography: TypographyVariation = {
 };
 
 export const fontStack: FontStack = {
-  default: 'Lato',
+  default: 'Inter',
   mono: 'Consolas, monaco, monospace',
 };
 

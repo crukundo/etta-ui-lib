@@ -61,57 +61,57 @@ storiesOf('Themed Palettes', module)
     </ScrollView>
   ))
 
-  .add('Light theme primary', () => (
-    <>
-      {mappedLightPrimaryColors.map(([key, value]) => (
+  .add('Light theme primary', () =>
+    React.Children.toArray(
+      mappedLightPrimaryColors.map(([key, value]) => (
         <>
-          <ArtBoard key={key} backgroundColor={value}></ArtBoard>
+          <ArtBoard backgroundColor={value}></ArtBoard>
           <Text style={styles.colorText} fontWeight="regular" fontColor="dark">
             {key}: {value}
           </Text>
         </>
-      ))}
-    </>
-  ))
+      ))
+    )
+  )
 
-  .add('Light theme neutral', () => (
-    <>
-      {mappedLightNeutralColors.map(([key, value]) => (
+  .add('Light theme neutral', () =>
+    React.Children.toArray(
+      mappedLightNeutralColors.map(([key, value]) => (
         <>
           <ArtBoard key={key} backgroundColor={value}></ArtBoard>
           <Text style={styles.colorText} fontWeight="regular" fontColor="dark">
             {key}: {value}
           </Text>
         </>
-      ))}
-    </>
-  ))
+      ))
+    )
+  )
 
-  .add('Dark theme primary', () => (
-    <>
-      {mappedDarkPrimaryColors.map(([key, value]) => (
+  .add('Dark theme primary', () =>
+    React.Children.toArray(
+      mappedDarkPrimaryColors.map(([key, value]) => (
         <>
           <ArtBoard key={key} backgroundColor={value}></ArtBoard>
           <Text style={styles.colorText} fontWeight="regular" fontColor="dark">
             {key}: {value}
           </Text>
         </>
-      ))}
-    </>
-  ))
+      ))
+    )
+  )
 
-  .add('Dark theme neutral', () => (
-    <>
-      {mappedDarkNeutralColors.map(([key, value]) => (
+  .add('Dark theme neutral', () =>
+    React.Children.toArray(
+      mappedDarkNeutralColors.map(([key, value]) => (
         <>
           <ArtBoard key={key} backgroundColor={value}></ArtBoard>
           <Text style={styles.colorText} fontWeight="regular" fontColor="dark">
             {key}: {value}
           </Text>
         </>
-      ))}
-    </>
-  ));
+      ))
+    )
+  );
 
 const styles = StyleSheet.create({
   colorText: {
