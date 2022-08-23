@@ -121,6 +121,8 @@ export type ZIndex = {
 
 export type FontWeight = {
   regular: string;
+  medium: string;
+  semibold: string;
   bold: string;
   black: string;
 };

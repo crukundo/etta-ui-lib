@@ -94,36 +94,37 @@ export const borderWidth: BorderWidth = {
 
 export const typography: TypographyVariation = {
   h5: {
-    fontSize: RFValueStr('16px'), // '1rem'
-    lineHeight: RFValueStr('24px'), // '1.5rem'
+    fontSize: RFValueStr('18px'), // '1rem'
+    lineHeight: RFValueStr('25px'), // '1.5rem'
   },
   h4: {
-    fontSize: RFValueStr('18px'), // '1.125rem'
-    lineHeight: RFValueStr('27px'), // '1.688rem'
+    fontSize: RFValueStr('21px'),
+    lineHeight: RFValueStr('21px'),
   },
   h3: {
-    fontSize: RFValueStr('20px'), // '1.25rem'
-    lineHeight: RFValueStr('32px'), // '2rem'
+    fontSize: RFValueStr('24px'),
+    lineHeight: RFValueStr('34px'),
   },
   h2: {
-    fontSize: RFValueStr('26px'), // '1.625rem'
-    lineHeight: RFValueStr('38px'), // '2.375rem'
+    fontSize: RFValueStr('28px'),
+    lineHeight: RFValueStr('39px'),
   },
   h1: {
-    fontSize: RFValueStr('32px'), // '2rem'
-    lineHeight: RFValueStr('42px'), // '2.625rem'
+    fontSize: RFValueStr('36px'),
+    lineHeight: RFValueStr('50px'),
   },
+  // unsure about these below so can be updated later.
   base: {
-    fontSize: RFValueStr('14px'), // '0.875rem'
-    lineHeight: RFValueStr('21px'), // '1.313rem'
+    fontSize: RFValueStr('18px'),
+    lineHeight: RFValueStr('25px'),
   },
   sub: {
-    fontSize: RFValueStr('12px'), // '0.75rem'
-    lineHeight: RFValueStr('18px'), // '1.125rem'
+    fontSize: RFValueStr('15px'),
+    lineHeight: RFValueStr('21px'),
   },
   label: {
-    fontSize: RFValueStr('10px'),
-    lineHeight: RFValueStr('12px'),
+    fontSize: RFValueStr('13px'),
+    lineHeight: RFValueStr('18px'),
   },
 };
 
@@ -134,6 +135,8 @@ export const fontStack: FontStack = {
 
 export const fontWeight: FontWeight = {
   regular: '400',
+  medium: '500',
+  semibold: '600',
   bold: '700',
   black: '900',
 };
@@ -141,6 +144,8 @@ export const fontWeight: FontWeight = {
 export const fontFiles: FontWeight = {
   black: '{0}-Black',
   bold: '{0}-Bold',
+  semibold: '{0}-SemiBold',
+  medium: '{0}-Medium',
   regular: '{0}-Regular',
 };
 

@@ -11,6 +11,7 @@ const STANDARD_SCREEN_HEIGHT = 680;
  * @param percent
  * @returns
  */
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const RFPercentage = (percent: number) => {
   if (Platform.OS === 'web') return percent;
   const { height, width } = Dimensions.get('window');
@@ -37,6 +38,7 @@ export const RFPercentage = (percent: number) => {
  * @param standardScreenHeight
  * @returns
  */
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const RFValue = (
   fontSize: number,
   standardScreenHeight: number = STANDARD_SCREEN_HEIGHT
@@ -65,6 +67,7 @@ export const RFValue = (
  * @param standardScreenHeight
  * @returns
  */
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const RFValueStr = (fontSize: string, standardScreenHeight?: number) => {
   const _fontSize = extractNumbersFromString(fontSize);
   return `${RFValue(_fontSize, standardScreenHeight)}px`;
