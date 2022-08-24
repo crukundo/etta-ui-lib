@@ -22,76 +22,14 @@ const getStyledIcon = (Component, size) => styled(Component)`
 
 export const getIconComponent = (type: IconType, size: IconSizeType): any => {
   switch (type) {
-    case 'zocial':
+    case 'filled':
       return getStyledIcon(
-        require('react-native-vector-icons/dist/Zocial').default,
+        require('@ettawallet/rn-bitcoin-icons/dist/filled'),
         size
       );
-    case 'octicon':
+    case 'outline':
       return getStyledIcon(
-        require('react-native-vector-icons/dist/Octicons').default,
-        size
-      );
-    case 'material':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/MaterialIcons').default,
-        size
-      );
-    case 'material-community':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/MaterialCommunityIcons')
-          .default,
-        size
-      );
-    case 'ionicon':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/Ionicons').default,
-        size
-      );
-    case 'foundation':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/Foundation').default,
-        size
-      );
-    case 'evilicon':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/EvilIcons').default,
-        size
-      );
-    case 'entypo':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/Entypo').default,
-        size
-      );
-    case 'font-awesome':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/FontAwesome').default,
-        size
-      );
-    case 'font-awesome-5':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/FontAwesome5').default,
-        size
-      );
-    case 'simple-line-icon':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/SimpleLineIcons').default,
-        size
-      );
-    case 'feather':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/Feather').default,
-        size
-      );
-    case 'antdesign':
-    case 'ant-design':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/AntDesign').default,
-        size
-      );
-    case 'fontisto':
-      return getStyledIcon(
-        require('react-native-vector-icons/dist/Fontisto').default,
+        require('@ettawallet/rn-bitcoin-icons/dist/outline'),
         size
       );
     default:
@@ -99,7 +37,7 @@ export const getIconComponent = (type: IconType, size: IconSizeType): any => {
         return getStyledIcon(customIcons[type], size);
       }
       return getStyledIcon(
-        require('react-native-vector-icons/dist/MaterialIcons').default,
+        require('@ettawallet/rn-bitcoin-icons/dist/filled'),
         size
       );
   }

@@ -170,17 +170,4 @@ export const zIndex: ZIndex = {
   modal: 1000,
 };
 
-export type IconType =
-  | 'material'
-  | 'material-community'
-  | 'simple-line-icon'
-  | 'zocial'
-  | 'font-awesome'
-  | 'octicon'
-  | 'ionicon'
-  | 'foundation'
-  | 'evilicon'
-  | 'entypo'
-  | 'antdesign'
-  | 'font-awesome-5'
-  | string;
+export type IconType = 'filled' | 'outline' | string;

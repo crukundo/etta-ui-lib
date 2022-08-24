@@ -12,11 +12,11 @@ import {
 import { getIconColor, getIconComponent } from './helpers';
 
 export interface IconProps {
-  /**  Name of the icon. You must use the same icons from react-native-vector-icons */
+  /**  Name of the icon. You must use the same icons from @bitcoin-design/bitcoin-icons-react */
   name: string;
   /**  Default icon sizes from theme */
   size?: IconSizeType;
-  /**  Icon family. You must use the same icons from react-native-vector-icons */
+  /**  Icon type. Is it filled or outline*/
   type: IconType;
   /** Font theme fill color */
   fontColor?: FontColorType;
@@ -33,9 +33,9 @@ const Icon: FC<IconProps> = ({
   size = 'centi',
   type,
   style,
-  fontColor = 'dark',
+  fontColor = 'light',
   colorVariant,
-  colorTone = 'medium',
+  colorTone = 'orange',
   ...rest
 }) => {
   const theme = useTheme() as ThemeProp;
