@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 import { StyleProp, TextStyle } from 'react-native';
+
+import { filledIcons, outlineIcons } from '@ettawallet/rn-bitcoin-icons';
 import { useTheme } from '@emotion/react';
 import {
   ColorGradationType,
