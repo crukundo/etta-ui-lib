@@ -8,3 +8,4 @@ export {
   Button,
   ButtonNativeProps,
 } from './components/atoms/Button';
+export { BottomMenu, BottomMenuProps } from './components/molecules/BottomMenu';
