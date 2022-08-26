@@ -1,0 +1,559 @@
+@font-face {
+  font-family: "filled-bitcoin-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/filled-bitcoin-icons.eot");
+  src: url("./fonts/filled-bitcoin-icons.eot?#iefix") format("embedded-opentype"), url("./fonts/filled-bitcoin-icons.woff2") format("woff2"), url("./fonts/filled-bitcoin-icons.woff") format("woff"), url("./fonts/filled-bitcoin-icons.ttf") format("truetype"), url("./fonts/filled-bitcoin-icons.svg#filled-bitcoin-icons") format("svg");
+}
+
+.filled-bitcoin-icons {
+  display: inline-block;
+  font-family: "filled-bitcoin-icons";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.filled-bitcoin-icons-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.filled-bitcoin-icons-xs {
+  font-size: 0.75em;
+}
+
+.filled-bitcoin-icons-sm {
+  font-size: 0.875em;
+}
+
+.filled-bitcoin-icons-1x {
+  font-size: 1em;
+}
+
+.filled-bitcoin-icons-2x {
+  font-size: 2em;
+}
+
+.filled-bitcoin-icons-3x {
+  font-size: 3em;
+}
+
+.filled-bitcoin-icons-4x {
+  font-size: 4em;
+}
+
+.filled-bitcoin-icons-5x {
+  font-size: 5em;
+}
+
+.filled-bitcoin-icons-6x {
+  font-size: 6em;
+}
+
+.filled-bitcoin-icons-7x {
+  font-size: 7em;
+}
+
+.filled-bitcoin-icons-8x {
+  font-size: 8em;
+}
+
+.filled-bitcoin-icons-9x {
+  font-size: 9em;
+}
+
+.filled-bitcoin-icons-10x {
+  font-size: 10em;
+}
+
+.filled-bitcoin-icons-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.filled-bitcoin-icons-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.filled-bitcoin-icons-pull-left {
+  float: left;
+}
+
+.filled-bitcoin-icons-pull-right {
+  float: right;
+}
+
+.filled-bitcoin-icons.filled-bitcoin-icons-pull-left {
+  margin-right: 0.3em;
+}
+
+.filled-bitcoin-icons.filled-bitcoin-icons-pull-right {
+  margin-left: 0.3em;
+}
+
+
+.filled-bitcoin-icons-address-book::before {
+  content: "\ea01";
+}
+
+.filled-bitcoin-icons-alert::before {
+  content: "\ea02";
+}
+
+.filled-bitcoin-icons-arrow-down::before {
+  content: "\ea03";
+}
+
+.filled-bitcoin-icons-arrow-left::before {
+  content: "\ea04";
+}
+
+.filled-bitcoin-icons-arrow-right::before {
+  content: "\ea05";
+}
+
+.filled-bitcoin-icons-arrow-up::before {
+  content: "\ea06";
+}
+
+.filled-bitcoin-icons-bell::before {
+  content: "\ea07";
+}
+
+.filled-bitcoin-icons-bitcoin::before {
+  content: "\ea08";
+}
+
+.filled-bitcoin-icons-bitcoin-circle::before {
+  content: "\ea09";
+}
+
+.filled-bitcoin-icons-block::before {
+  content: "\ea0a";
+}
+
+.filled-bitcoin-icons-brush::before {
+  content: "\ea0b";
+}
+
+.filled-bitcoin-icons-calendar::before {
+  content: "\ea0c";
+}
+
+.filled-bitcoin-icons-car::before {
+  content: "\ea0d";
+}
+
+.filled-bitcoin-icons-caret-down::before {
+  content: "\ea0e";
+}
+
+.filled-bitcoin-icons-caret-left::before {
+  content: "\ea0f";
+}
+
+.filled-bitcoin-icons-caret-right::before {
+  content: "\ea10";
+}
+
+.filled-bitcoin-icons-caret-up::before {
+  content: "\ea11";
+}
+
+.filled-bitcoin-icons-cart::before {
+  content: "\ea12";
+}
+
+.filled-bitcoin-icons-channel::before {
+  content: "\ea13";
+}
+
+.filled-bitcoin-icons-channels::before {
+  content: "\ea14";
+}
+
+.filled-bitcoin-icons-check::before {
+  content: "\ea15";
+}
+
+.filled-bitcoin-icons-clear-character::before {
+  content: "\ea16";
+}
+
+.filled-bitcoin-icons-clock::before {
+  content: "\ea17";
+}
+
+.filled-bitcoin-icons-cloud::before {
+  content: "\ea18";
+}
+
+.filled-bitcoin-icons-code::before {
+  content: "\ea19";
+}
+
+.filled-bitcoin-icons-coins::before {
+  content: "\ea1a";
+}
+
+.filled-bitcoin-icons-confirmations-0::before {
+  content: "\ea1b";
+}
+
+.filled-bitcoin-icons-confirmations-1::before {
+  content: "\ea1c";
+}
+
+.filled-bitcoin-icons-confirmations-2::before {
+  content: "\ea1d";
+}
+
+.filled-bitcoin-icons-confirmations-3::before {
+  content: "\ea1e";
+}
+
+.filled-bitcoin-icons-confirmations-4::before {
+  content: "\ea1f";
+}
+
+.filled-bitcoin-icons-confirmations-5::before {
+  content: "\ea20";
+}
+
+.filled-bitcoin-icons-confirmations-6::before {
+  content: "\ea21";
+}
+
+.filled-bitcoin-icons-console::before {
+  content: "\ea22";
+}
+
+.filled-bitcoin-icons-contacts::before {
+  content: "\ea23";
+}
+
+.filled-bitcoin-icons-copy::before {
+  content: "\ea24";
+}
+
+.filled-bitcoin-icons-credit-card::before {
+  content: "\ea25";
+}
+
+.filled-bitcoin-icons-cross::before {
+  content: "\ea26";
+}
+
+.filled-bitcoin-icons-devices::before {
+  content: "\ea27";
+}
+
+.filled-bitcoin-icons-edit::before {
+  content: "\ea28";
+}
+
+.filled-bitcoin-icons-ellipsis::before {
+  content: "\ea29";
+}
+
+.filled-bitcoin-icons-exchange::before {
+  content: "\ea2a";
+}
+
+.filled-bitcoin-icons-exit::before {
+  content: "\ea2b";
+}
+
+.filled-bitcoin-icons-export::before {
+  content: "\ea2c";
+}
+
+.filled-bitcoin-icons-file::before {
+  content: "\ea2d";
+}
+
+.filled-bitcoin-icons-flip-horizontal::before {
+  content: "\ea2e";
+}
+
+.filled-bitcoin-icons-flip-vertical::before {
+  content: "\ea2f";
+}
+
+.filled-bitcoin-icons-gear::before {
+  content: "\ea30";
+}
+
+.filled-bitcoin-icons-globe::before {
+  content: "\ea31";
+}
+
+.filled-bitcoin-icons-graph::before {
+  content: "\ea32";
+}
+
+.filled-bitcoin-icons-grid::before {
+  content: "\ea33";
+}
+
+.filled-bitcoin-icons-hidden::before {
+  content: "\ea34";
+}
+
+.filled-bitcoin-icons-home::before {
+  content: "\ea35";
+}
+
+.filled-bitcoin-icons-info::before {
+  content: "\ea36";
+}
+
+.filled-bitcoin-icons-invoice::before {
+  content: "\ea37";
+}
+
+.filled-bitcoin-icons-key::before {
+  content: "\ea38";
+}
+
+.filled-bitcoin-icons-lightning::before {
+  content: "\ea39";
+}
+
+.filled-bitcoin-icons-link::before {
+  content: "\ea3a";
+}
+
+.filled-bitcoin-icons-lock::before {
+  content: "\ea3b";
+}
+
+.filled-bitcoin-icons-magic-wand::before {
+  content: "\ea3c";
+}
+
+.filled-bitcoin-icons-menu::before {
+  content: "\ea3d";
+}
+
+.filled-bitcoin-icons-milk::before {
+  content: "\ea3e";
+}
+
+.filled-bitcoin-icons-miner::before {
+  content: "\ea3f";
+}
+
+.filled-bitcoin-icons-mining::before {
+  content: "\ea40";
+}
+
+.filled-bitcoin-icons-minus::before {
+  content: "\ea41";
+}
+
+.filled-bitcoin-icons-mixed::before {
+  content: "\ea42";
+}
+
+.filled-bitcoin-icons-mnemonic::before {
+  content: "\ea43";
+}
+
+.filled-bitcoin-icons-moon::before {
+  content: "\ea44";
+}
+
+.filled-bitcoin-icons-no-dollars::before {
+  content: "\ea45";
+}
+
+.filled-bitcoin-icons-node::before {
+  content: "\ea46";
+}
+
+.filled-bitcoin-icons-node-0-connections::before {
+  content: "\ea47";
+}
+
+.filled-bitcoin-icons-node-1-connection::before {
+  content: "\ea48";
+}
+
+.filled-bitcoin-icons-node-2-connections::before {
+  content: "\ea49";
+}
+
+.filled-bitcoin-icons-node-3-connections::before {
+  content: "\ea4a";
+}
+
+.filled-bitcoin-icons-node-hardware::before {
+  content: "\ea4b";
+}
+
+.filled-bitcoin-icons-pantheon::before {
+  content: "\ea4c";
+}
+
+.filled-bitcoin-icons-password::before {
+  content: "\ea4d";
+}
+
+.filled-bitcoin-icons-photo::before {
+  content: "\ea4e";
+}
+
+.filled-bitcoin-icons-pie-chart::before {
+  content: "\ea4f";
+}
+
+.filled-bitcoin-icons-plus::before {
+  content: "\ea50";
+}
+
+.filled-bitcoin-icons-point-of-sale::before {
+  content: "\ea51";
+}
+
+.filled-bitcoin-icons-proxy::before {
+  content: "\ea52";
+}
+
+.filled-bitcoin-icons-qr-code::before {
+  content: "\ea53";
+}
+
+.filled-bitcoin-icons-question::before {
+  content: "\ea54";
+}
+
+.filled-bitcoin-icons-receive::before {
+  content: "\ea55";
+}
+
+.filled-bitcoin-icons-refresh::before {
+  content: "\ea56";
+}
+
+.filled-bitcoin-icons-relay::before {
+  content: "\ea57";
+}
+
+.filled-bitcoin-icons-rocket::before {
+  content: "\ea58";
+}
+
+.filled-bitcoin-icons-safe::before {
+  content: "\ea59";
+}
+
+.filled-bitcoin-icons-satoshi-v1::before {
+  content: "\ea5a";
+}
+
+.filled-bitcoin-icons-satoshi-v2::before {
+  content: "\ea5b";
+}
+
+.filled-bitcoin-icons-satoshi-v3::before {
+  content: "\ea5c";
+}
+
+.filled-bitcoin-icons-scan::before {
+  content: "\ea5d";
+}
+
+.filled-bitcoin-icons-sd-card::before {
+  content: "\ea5e";
+}
+
+.filled-bitcoin-icons-search::before {
+  content: "\ea5f";
+}
+
+.filled-bitcoin-icons-send::before {
+  content: "\ea60";
+}
+
+.filled-bitcoin-icons-share::before {
+  content: "\ea61";
+}
+
+.filled-bitcoin-icons-shared-wallet::before {
+  content: "\ea62";
+}
+
+.filled-bitcoin-icons-shield::before {
+  content: "\ea63";
+}
+
+.filled-bitcoin-icons-sign::before {
+  content: "\ea64";
+}
+
+.filled-bitcoin-icons-snowflake::before {
+  content: "\ea65";
+}
+
+.filled-bitcoin-icons-sofa::before {
+  content: "\ea66";
+}
+
+.filled-bitcoin-icons-sun::before {
+  content: "\ea67";
+}
+
+.filled-bitcoin-icons-tag::before {
+  content: "\ea68";
+}
+
+.filled-bitcoin-icons-transactions::before {
+  content: "\ea69";
+}
+
+.filled-bitcoin-icons-transfer::before {
+  content: "\ea6a";
+}
+
+.filled-bitcoin-icons-trash::before {
+  content: "\ea6b";
+}
+
+.filled-bitcoin-icons-two-keys::before {
+  content: "\ea6c";
+}
+
+.filled-bitcoin-icons-unlock::before {
+  content: "\ea6d";
+}
+
+.filled-bitcoin-icons-unmixed::before {
+  content: "\ea6e";
+}
+
+.filled-bitcoin-icons-usb::before {
+  content: "\ea6f";
+}
+
+.filled-bitcoin-icons-verify::before {
+  content: "\ea70";
+}
+
+.filled-bitcoin-icons-visible::before {
+  content: "\ea71";
+}
+
+.filled-bitcoin-icons-wallet::before {
+  content: "\ea72";
+}
+
