@@ -12,7 +12,7 @@ export const StyledView = styled.View<ViewProps & Partial<StyleProps>>`
 
 export const TabContainer = styled.Pressable<
   { selected: boolean } & PressableProps & Partial<StyleProps>
->`
+  >`
   flex: 1;
   margin-horizontal: ${({ theme }) => theme.spacing.mili};
   padding-top: ${({ theme }) => theme.spacing.deca};
@@ -27,7 +27,7 @@ export const TabContent = styled.View<ViewProps & Partial<StyleProps>>`
   justify-content: center;
   align-items: center;
   min-height: ${RFValueStr('48px')};
-  background-color: ${({ theme }) => theme.color.primary.orange};
+  background-color: ${({ theme }) => theme.color.primary.neutral1};
   border-radius: ${({ theme }) => theme.borderRadius['mili']};
 `;
 
