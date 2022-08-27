@@ -1,0 +1,1 @@
+{"version":3,"file":"declaration.d.js","names":[],"sources":["../../src/static/declaration.d.ts"],"sourcesContent":["declare module \"*.eot\";\ndeclare module \"*.json\";\ndeclare module \"*.svg\";\ndeclare module \"*.ttf\";\ndeclare module \"*.woff\";\ndeclare module \"*.woff2\";\ndeclare module \"*.css\";\n"],"mappings":""}
