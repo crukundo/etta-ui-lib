@@ -2,52 +2,26 @@
     "name": "@ettawallet/rn-bitcoin-icons",
     "description": "React Native Icons from the Bitcoin UI Kit",
     "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "license": "MIT",
     "scripts": {
-        "build": "yarn clean && yarn build:filled && yarn build:outline && yarn build:icons && yarn copy:static && yarn build:tsc && yarn build:js",
-        "build:js": "rollup -c",
-        "build:filled": "node -r sucrase/register -e 'require(\"./src/index.js\").initFilled()'",
-        "build:outline": "node -r sucrase/register -e 'require(\"./src/index.js\").initOutline()'",
-        "build:tsc": "tsc -p ./tsconfig.json",
-        "build:icons": "tsc -p ./tsconfig-old.json",
-        "clean": "rm -rf dist",
-        "copy:static": "cp -r ./src/static/* ./dist",
-        "lint": "eslint --ext .js ./",
-        "lint:fix": "yarn lint --fix",
-        "html": "http-server ./dist",
-        "start": "yarn build",
-        "test": "jest --collectCoverage --colors",
-        "watch": "yarn start"
-    },
-    "nodemonConfig": {
-        "verbose": true,
-        "execMap": {
-            "js": "node -r sucrase/register"
-        }
+        "start": "yarn build:es --watch",
+        "build:es": "cross-env BABEL_ENV=build babel src --root-mode upward --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+        "build:declaration": "tsc --project tsconfig.json",
+        "build:declaration:watch": "tsc --project tsconfig.build.json --watch",
+        "yalc:push": "yalc push --changed",
+        "yalc:show": "yalc installations show $npm_package_name"
     },
     "dependencies": {
         "@emotion/native": "^11.0.0",
         "@emotion/react": "^11.4.1",
         "react-native-svg": "^12.3.0"
     },
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "browser": "dist/umd/index.js",
-    "jsdelivr": "dist/umd/index.js",
-    "source": "dist/index.ts",
-    "types": "dist/index.d.ts",
-    "typings": "dist/index.d.ts",
-    "unpkg": "dist/umd/index.js",
     "repository": {
         "type": "git",
         "directory": "packages/rn-bitcoin-icons",
         "url": "git+ssh://git@github.com/crukundo/etta-ui-lib.git"
-    },
-    "files": [
-        "dist"
-    ],
-    "directories": {
-        "lib": "./dist"
     },
     "bugs": {
         "url": "https://github.com//crukundo/etta-ui-lib/issues"
@@ -56,28 +30,8 @@
     "peerDependencies": {
         "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
     },
-    "config": {},
     "devDependencies": {
-        "@rollup/plugin-json": "4.1.0",
-        "@rollup/plugin-typescript": "6.1.0",
-        "@rollup/plugin-url": "5.0.1",
         "@svgr/cli": "^6.3.1",
-        "babel-jest": "26.6.3",
-        "glob": "7.2.0",
-        "jest": "26.6.3",
-        "json-to-ts": "1.7.0",
-        "puppeteer": "5.5.0",
-        "ramda": "0.27.1",
-        "react-native-svg-transformer": "^1.0.0",
-        "rollup": "2.69.1",
-        "string.fromcodepoint": "1.0.0",
-        "string.prototype.codepointat": "1.0.0",
-        "sucrase": "^3.25.0",
-        "svg2vectordrawable": "2.6.26",
-        "svgo": "1.3.2",
-        "tslib": "2.3.1",
-        "typed-css-modules": "0.6.4",
-        "typescript": "4.6.2",
-        "webfont": "9.0.0"
+        "react-native-svg-transformer": "^1.0.0"
     }
 }

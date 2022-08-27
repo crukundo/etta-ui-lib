@@ -8,6 +8,9 @@ import {
 } from '@ettawallet/react-core';
 import styled from '@emotion/native';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const createIconSet = require('@ettawallet/react-core/src/components/atoms/Icon/libs/create-icon-set.js');
+
 /* eslint-disable */
 const customIcons: any = {};
 
@@ -20,26 +23,38 @@ const getStyledIcon = (Component, size) => styled(Component)`
   text-align: center;
 `;
 
+const IconSetPath = require('@ettawallet/rn-bitcoin-icons/dist/');
+
 export const getIconComponent = (type: IconType, size: IconSizeType): any => {
   switch (type) {
     case 'filled':
-      return getStyledIcon(
-        require('@ettawallet/rn-bitcoin-icons/dist/filled'),
-        size
+      const filledGlyphMap = `${IconSetPath} + ${type}-bitcoin-icons.json`;
+      const filledIconsFile = `${IconSetPath} + 'fonts/' + ${type}-bitcoin-icons.ttf`;
+      const filledIconSet = createIconSet(
+        filledGlyphMap,
+        'FilledBitcoinIcon',
+        filledIconsFile
       );
+      console.log("filled icon set");
+      return getStyledIcon(filledIconSet, size);
     case 'outline':
-      return getStyledIcon(
-        require('@ettawallet/rn-bitcoin-icons/dist/outline'),
-        size
+      const outlineGlyphMap = `${IconSetPath} + ${type}-bitcoin-icons.json`;
+      const outlineIconsFile = `${IconSetPath} + 'fonts/' + ${type}-bitcoin-icons.ttf`;
+      const outlineIconSet = createIconSet(
+        outlineGlyphMap,
+        'OutlineBitcoinIcon',
+        outlineIconsFile
       );
-    default:
-      if (Object.prototype.hasOwnProperty.call(customIcons, type)) {
-        return getStyledIcon(customIcons[type], size);
-      }
-      return getStyledIcon(
-        require('@ettawallet/rn-bitcoin-icons/dist/filled'),
-        size
-      );
+      console.log(outlineIconSet);
+      return getStyledIcon(outlineIconSet, size);
+    // default:
+    //   if (Object.prototype.hasOwnProperty.call(customIcons, type)) {
+    //     return getStyledIcon(customIcons[type], size);
+    //   }
+    //   return getStyledIcon(
+    //     require('@ettawallet/rn-bitcoin-icons/dist/filled'),
+    //     size
+    //   );
   }
 };
 /* eslint-enable */

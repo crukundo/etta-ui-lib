@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { StyleProp, TextStyle } from 'react-native';
-
-import { filledIcons, outlineIcons } from '@ettawallet/rn-bitcoin-icons';
+import styled from '@emotion/native';
 import { useTheme } from '@emotion/react';
+import { FilledIconName, OutlineIconName } from '@ettawallet/rn-bitcoin-icons';
 import {
   ColorGradationType,
   ColorType,
@@ -14,11 +14,11 @@ import {
 import { getIconColor, getIconComponent } from './helpers';
 
 export interface IconProps {
-  /**  Name of the icon. You must use the same icons from @bitcoin-design/bitcoin-icons-react */
-  name: string;
+  /**  Name of the icon. You must use the same icons from react-native-vector-icons */
+  name: FilledIconName | OutlineIconName;
   /**  Default icon sizes from theme */
   size?: IconSizeType;
-  /**  Icon type. Is it filled or outline*/
+  /**  Icon family. You must use the same icons from bitcoin icon list */
   type: IconType;
   /** Font theme fill color */
   fontColor?: FontColorType;
@@ -29,22 +29,29 @@ export interface IconProps {
   style?: StyleProp<TextStyle>;
 }
 
-/** NOTE: When using colors, the order matters if you're trying to merge multiple types. */
-const Icon: FC<IconProps> = ({
+export const Icon: FC<IconProps> = ({
   name,
   size = 'centi',
-  type,
-  style,
-  fontColor = 'light',
+  fontColor = 'dark',
   colorVariant,
   colorTone = 'orange',
+  type,
+  style,
   ...rest
 }) => {
   const theme = useTheme() as ThemeProp;
   const color = getIconColor(colorVariant, colorTone, fontColor, theme);
-  const RNVIcon = getIconComponent(type, size);
+  const IconComponent = getIconComponent(type, size);
 
-  return <RNVIcon {...rest} style={style} name={name} color={color} />;
+  return (
+    <IconComponent
+      {...rest}
+      color={color}
+      size={size}
+      style={style}
+      name={name}
+    />
+  );
 };
 
 export default Icon;
