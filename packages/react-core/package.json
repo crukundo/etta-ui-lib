@@ -36,5 +36,6 @@
   "homepage": "https://crukundo.github.io/etta-ui-lib/",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "55f27f50e53a81a944c8ababa0d639ea4cbaf14d"
 }
