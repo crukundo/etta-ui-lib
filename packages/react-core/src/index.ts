@@ -14,6 +14,7 @@ export {
   PressableSurfaceProps,
 } from './components/atoms/PressableSurface';
 export { Text, TextProps } from './components/atoms/Text';
+export { Switch, SwitchProps } from './components/atoms/Switch';
 
 export * from './styles/definitions';
 export * from './styles/light';
