@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/crukundo/etta-ui-lib/issues"
   },
-  "homepage": "https://crukundo.github.io/etta-ui-lib/"
+  "homepage": "https://crukundo.github.io/etta-ui-lib/",
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -29,6 +29,9 @@
     "url": "https://github.com//crukundo/etta-ui-lib/issues"
   },
   "homepage": "https://crukundo.github.io/etta-ui-lib/",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "react-native": "^0.64.0",
