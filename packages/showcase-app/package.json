@@ -1,7 +1,7 @@
 {
   "name": "@ettawallet/showcase-app",
   "description": "Preview Etta UI components in RN",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "react-native start",
