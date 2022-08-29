@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 import { ArtBoard } from '../ArtBoard';
-import { BottomMenu, Icon, Text, Button } from '@ettawallet/react-native-kit';
+import { BottomMenu, Text } from '@ettawallet/react-native-kit';
 import styled from '@emotion/native';
 import { Pressable } from 'react-native';
 

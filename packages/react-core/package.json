@@ -37,5 +37,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "resolutions": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^18"
+  },
   "gitHead": "9ed7b92627dfbc016f05b55bf8ef3f24a14f7603"
 }

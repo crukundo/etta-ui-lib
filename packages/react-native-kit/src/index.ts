@@ -10,7 +10,12 @@ export {
 } from './components/atoms/Button';
 export { BottomMenu, BottomMenuProps } from './components/molecules/BottomMenu';
 export {
+  ListIcon,
   ListItem,
+  ListSection,
+  ListSubheader,
+  ListIconProps,
   ListItemProps,
-  ListItemFeedback,
-} from './components/atoms/ListItem';
+  ListSectionProps,
+  ListSubheaderProps,
+} from './components/atoms/List';

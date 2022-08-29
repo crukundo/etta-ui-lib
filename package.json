@@ -77,14 +77,15 @@
     "prettify": "prettier --write ./**/*.{ts,tsx,json} && prettier --write *.{ts,tsx,json}",
     "bootstrap": "yarn build",
     "tsc": "tsc",
-    "prepare": "husky install && yarn bootstrap",
+    "prepare": "husky install",
     "storybook": "cross-env STORYBOOK_FONT_URL='' start-storybook -p 7007",
     "build-storybook": "rimraf -rf sbdocs/ && cross-env STORYBOOK_FONT_URL='/etta-ui-lib' build-storybook -o sbdocs/"
   },
   "resolutions": {
     "babel-core": "^7.0.0-bridge.0",
     "@types/react": "^17.0.38",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "@types/react-native": "~0.69.1"
   },
   "engines": {
     "node": ">=14"

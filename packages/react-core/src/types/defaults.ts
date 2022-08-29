@@ -170,3 +170,12 @@ export type BorderRadiusType = keyof BorderRadius;
 export type FontStackType = keyof FontStack;
 
 export type IconSizeType = keyof IconSize;
+
+export type $Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
+
+export type $RemoveChildren<T extends React.ComponentType<any>> = $Omit<
+  React.ComponentPropsWithoutRef<T>,
+  'children'
+>;
+
+export type EllipsizeProp = 'head' | 'middle' | 'tail' | 'clip';
