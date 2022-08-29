@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react-native';
 import React, { useState } from 'react';
-import { View, FlatList, ScrollView } from 'react-native';
+import { ScrollView, FlatList } from 'react-native';
 import { ArtBoard } from '../ArtBoard';
 import {
   Text,
@@ -11,6 +11,7 @@ import {
   ListIcon,
   Divider,
 } from '@ettawallet/react-native-kit';
+import { data } from './stories.data';
 
 const renderDivider = () => <Divider linePosition="bottom" />;
 
@@ -66,4 +67,32 @@ storiesOf('ListItem', module)
         />
       </ListSection>
     </ScrollView>
-  ));
+  ))
+
+  .add('List with actions', () => <ListWithSwitches />);
+
+export const ListWithSwitches = () => {
+  const [check, setCheck] = useState(false);
+
+  const renderItem = ({ item }) => {
+    return (
+      <ListSection>
+        <ListItem
+          title={item.title}
+          right={props => <Switch active={check} onChange={setCheck} />}
+        />
+      </ListSection>
+    );
+  };
+
+  return (
+    <ArtBoard>
+      <FlatList
+        ItemSeparatorComponent={renderDivider}
+        data={data}
+        renderItem={renderItem}
+        extraData={check}
+      />
+    </ArtBoard>
+  );
+};
