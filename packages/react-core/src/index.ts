@@ -13,7 +13,12 @@ export {
   PressableSurface,
   PressableSurfaceProps,
 } from './components/atoms/PressableSurface';
+export {
+  TouchableRipple,
+  TouchableRippleProps,
+} from './components/atoms/TouchableRipple';
 export { Text, TextProps } from './components/atoms/Text';
+export { Divider, DividerProps } from './components/atoms/Divider';
 export { Switch, SwitchProps } from './components/atoms/Switch';
 
 export * from './styles/definitions';

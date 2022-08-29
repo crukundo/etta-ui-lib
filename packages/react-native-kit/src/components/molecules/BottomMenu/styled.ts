@@ -12,7 +12,7 @@ export const StyledView = styled.View<ViewProps & Partial<StyleProps>>`
 
 export const TabContainer = styled.Pressable<
   { selected: boolean } & PressableProps & Partial<StyleProps>
-  >`
+>`
   flex: 1;
   margin-horizontal: ${({ theme }) => theme.spacing.mili};
   padding-top: ${({ theme }) => theme.spacing.deca};
