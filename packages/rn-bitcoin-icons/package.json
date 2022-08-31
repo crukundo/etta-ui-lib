@@ -1,7 +1,7 @@
 {
     "name": "@ettawallet/rn-bitcoin-icons",
     "description": "React Native Icons from the Bitcoin UI Kit",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "license": "MIT",
