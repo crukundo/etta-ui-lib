@@ -1,7 +1,7 @@
 {
   "name": "@ettawallet/showcase-app",
   "description": "Preview Etta UI components in RN",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "react-native start",
@@ -16,8 +16,8 @@
   "dependencies": {
     "@emotion/native": "^11.0.0",
     "@emotion/react": "^11.4.1",
-    "@ettawallet/react-native-kit": "^1.0.0",
-    "@ettawallet/rn-bitcoin-icons": "^1.0.0",
+    "@ettawallet/react-native-kit": "^1.0.1",
+    "@ettawallet/rn-bitcoin-icons": "^1.0.1",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.9.3",
     "@react-navigation/stack": "^5.14.3",
