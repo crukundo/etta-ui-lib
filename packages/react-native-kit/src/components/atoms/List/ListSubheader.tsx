@@ -21,9 +21,9 @@ export type ListSubheaderProps = React.ComponentProps<typeof Text> & {
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List } from 'react-native-paper';
+ * import { List } from '@ettawallet/react-native-kit';
  *
- * const MyComponent = () => <List.Subheader>My List Title</List.Subheader>;
+ * const MyComponent = () => <ListSubheader>My List Title</ListSubheader>;
  *
  * export default MyComponent;
  * ```

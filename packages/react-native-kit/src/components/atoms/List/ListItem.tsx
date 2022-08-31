@@ -111,29 +111,24 @@ export type ListItemProps = $RemoveChildren<typeof TouchableRipple> & {
 /**
  * A component to show tiles inside a List.
  *
- * <div class="screenshots">
- *   <img class="medium" src="screenshots/list-item-1.png" />
- *   <img class="medium" src="screenshots/list-item-2.png" />
- *   <img class="medium" src="screenshots/list-item-3.png" />
- * </div>
  *
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List } from 'react-native-paper';
+ * import { List } from '@ettawallet/react-native-kit';
  *
  * const MyComponent = () => (
- *   <List.Item
+ *   <ListItem
  *     title="First Item"
  *     description="Item description"
- *     left={props => <List.Icon {...props} icon="folder" />}
+ *     left={props => <ListIcon {...props} icon="icon-block" />}
  *   />
  * );
  *
  * export default MyComponent;
  * ```
  *
- * @extends TouchableRipple props https://callstack.github.io/react-native-paper/touchable-ripple.html
+ * @extends TouchableRipple
  */
 const ListItem = ({
   left,

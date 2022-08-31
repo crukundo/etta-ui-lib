@@ -33,24 +33,20 @@ export type ListSectionProps = React.ComponentPropsWithRef<typeof View> & {
 /**
  * A component used to group list items.
  *
- * <div class="screenshots">
- *   <img src="screenshots/list-section.png" />
- * </div>
- *
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List, MD3Colors } from 'react-native-paper';
+ * import { List } from '@ettawallet/react-native-kit';
  *
  * const MyComponent = () => (
- *   <List.Section>
- *     <List.Subheader>Some title</List.Subheader>
- *     <List.Item title="First Item" left={() => <List.Icon icon="folder" />} />
- *     <List.Item
+ *   <ListSection>
+ *     <ListSubheader>Some title</ListSubheader>
+ *     <ListItem title="First Item" left={() => <ListIcon icon="icon-block" />} />
+ *     <ListItem
  *       title="Second Item"
- *       left={() => <List.Icon color={MD3Colors.tertiary70} icon="folder" />}
+ *       left={() => <ListIcon color="" icon="icon-gear" />}
  *     />
- *   </List.Section>
+ *   </ListSection>
  * );
  *
  * export default MyComponent;

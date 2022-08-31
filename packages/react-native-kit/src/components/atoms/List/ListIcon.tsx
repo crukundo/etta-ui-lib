@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { css}
 import { View, ViewStyle, StyleSheet, StyleProp } from 'react-native';
 import { Icon, IconProps } from '@ettawallet/react-core';
 
@@ -17,22 +18,15 @@ export type ListIconProps = {
 /**
  * A component to show an icon in a list item.
  *
- * <div class="screenshots">
- *   <figure>
- *     <img class="medium" src="screenshots/list-icon.png" />
- *   </figure>
- * </div>
  *
  * ## Usage
  * ```js
  * import * as React from 'react';
- * import { List, MD3Colors } from 'react-native-paper';
+ * import { List } from '@ettawallet/react-native-kit';
  *
  * const MyComponent = () => (
  *   <>
- *     <List.Icon color={MD3Colors.tertiary70} icon="folder" />
- *     <List.Icon color={MD3Colors.tertiary70} icon="equal" />
- *     <List.Icon color={MD3Colors.tertiary70} icon="calendar" />
+ *     <ListIcon color="" icon="icon-bitcoin-circle" />
  *   </>
  * );
  *
