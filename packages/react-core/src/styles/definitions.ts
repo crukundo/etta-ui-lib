@@ -134,19 +134,27 @@ export const fontStack: FontStack = {
 };
 
 export const fontWeight: FontWeight = {
+  thin: '100',
+  extralight: '200',
+  light: '300',
   regular: '400',
   medium: '500',
   semibold: '600',
   bold: '700',
+  extrabold: '800',
   black: '900',
 };
 
 export const fontFiles: FontWeight = {
   black: '{0}-Black',
+  extrabold: '{0}-ExtraBold',
   bold: '{0}-Bold',
   semibold: '{0}-SemiBold',
   medium: '{0}-Medium',
   regular: '{0}-Regular',
+  light: '{0}-Light',
+  extralight: '{0}-ExtraLight',
+  thin: '{0}-Thin',
 };
 
 export const fontColor: FontColor = {

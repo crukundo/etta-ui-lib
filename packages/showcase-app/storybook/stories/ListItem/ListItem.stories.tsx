@@ -42,7 +42,7 @@ storiesOf('ListItem', module)
         <ListItem
           left={props => <ListIcon {...props} icon="icon-clock-2" />}
           title="List item 1"
-          description="Describes item 1"
+          description="DNow you should be able to change your index.android.js and hit r twice or cmd+M -> Reload to reload the VD."
         />
         <ListItem
           left={props => <ListIcon {...props} icon="icon-clock-2" />}
@@ -79,6 +79,7 @@ export const ListWithSwitches = () => {
       <ListSection>
         <ListItem
           title={item.title}
+          description={item.description}
           right={props => <Switch active={check} onChange={setCheck} />}
         />
       </ListSection>
@@ -87,6 +88,7 @@ export const ListWithSwitches = () => {
 
   return (
     <ArtBoard>
+      <Divider linePosition="top" />
       <FlatList
         ItemSeparatorComponent={renderDivider}
         data={data}

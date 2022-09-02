@@ -21,7 +21,7 @@ const bottomLine = ({
   `;
 
 const StyledDividerBase = styled.View<Partial<StyleProps>>`
-  border-color: ${({ theme }) => theme.color.secondary.dark};
+  border-color: ${({ theme }) => theme.color.primary.neutral4};
 `;
 
 export const StyledDivider = styled(StyledDividerBase)<

@@ -37,7 +37,7 @@ const Text: FC<TextProps> = ({
   children,
   style,
   fontColor = 'dark',
-  colorTone = 'medium',
+  colorTone = 'black',
   colorVariant,
   fontWeight = 'regular',
   typography = 'base',

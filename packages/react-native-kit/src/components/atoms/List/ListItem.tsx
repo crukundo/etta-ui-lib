@@ -11,8 +11,11 @@ import {
   TouchableRipple,
   Text,
   ThemeProp,
+  StyleProps,
+  TextProps,
   EllipsizeProp,
   $RemoveChildren,
+  FontWeightType,
 } from '@ettawallet/react-core';
 import { withTheme } from '@emotion/react';
 
@@ -23,6 +26,7 @@ type Title =
       ellipsizeMode: EllipsizeProp | undefined;
       color: string;
       fontSize: number;
+      fontWeight: FontWeightType;
     }) => React.ReactNode);
 
 type Description =
@@ -31,7 +35,8 @@ type Description =
       selectable: boolean;
       ellipsizeMode: EllipsizeProp | undefined;
       color: string;
-      fontSize: number;
+      fontSize?: number;
+      fontWeight?: FontWeightType;
     }) => React.ReactNode);
 
 export type ListItemProps = $RemoveChildren<typeof TouchableRipple> & {
@@ -138,8 +143,8 @@ const ListItem = ({
   onPress,
   style,
   titleStyle,
-  titleNumberOfLines = 1,
-  descriptionNumberOfLines = 2,
+  titleNumberOfLines = 0,
+  descriptionNumberOfLines = 0,
   titleEllipsizeMode,
   descriptionEllipsizeMode,
   descriptionStyle,
@@ -155,6 +160,7 @@ const ListItem = ({
         ellipsizeMode: descriptionEllipsizeMode,
         color: descriptionColor,
         fontSize: styles.description.fontSize,
+        fontWeight: 'regular',
       })
     ) : (
       <Text
@@ -172,7 +178,7 @@ const ListItem = ({
   };
 
   const renderTitle = () => {
-    const titleColor = '#000000';
+    const titleColor = '#48484a';
 
     return typeof title === 'function' ? (
       title({
@@ -180,6 +186,7 @@ const ListItem = ({
         ellipsizeMode: titleEllipsizeMode,
         color: titleColor,
         fontSize: styles.title.fontSize,
+        fontWeight: 'bold',
       })
     ) : (
       <Text
@@ -192,7 +199,7 @@ const ListItem = ({
     );
   };
 
-  const descriptionColor = '#000000';
+  const descriptionColor = '#48484a';
 
   return (
     <TouchableRipple
@@ -243,19 +250,24 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
+    textAlign: 'left',
+    paddingRight: 20,
   },
   description: {
-    fontSize: 14,
+    fontSize: 16,
+    lineHeight: 24,
+    paddingRight: 0,
   },
   marginVerticalNone: { marginVertical: 0 },
   iconMarginLeft: { marginLeft: 0, marginRight: 16 },
   iconMarginRight: { marginRight: 0 },
   item: {
     marginVertical: 6,
-    paddingLeft: 8,
+    paddingLeft: 5,
   },
   content: {
     flex: 1,

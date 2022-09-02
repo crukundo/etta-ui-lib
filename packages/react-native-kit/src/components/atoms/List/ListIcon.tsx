@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { css}
 import { View, ViewStyle, StyleSheet, StyleProp } from 'react-native';
 import { Icon, IconProps } from '@ettawallet/react-core';
 

@@ -16,7 +16,12 @@ export const StorybookUI: FC = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <Header>
-        <Text typography="h5" fontWeight="black" fontColor="light">
+        <Text
+          typography="h5"
+          fontStack="default"
+          fontWeight="extrabold"
+          fontColor="light"
+        >
           Etta UI Preview
         </Text>
         <Text fontColor="light">version {pack.version}</Text>

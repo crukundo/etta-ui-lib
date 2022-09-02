@@ -1,10 +1,12 @@
 export const data = [
   {
     key: 'item1',
-    title: 'Secure with Face ID',
+    title:
+      'With bitcoin, you are your own bank. No one else has access to your private keys.',
   },
   {
     key: 'item2',
-    title: 'Secure with PIN',
+    title:
+      'If you lose access to this app, and the backup file we will help you create, your bitcoin cannot be recovered.',
   },
 ];
