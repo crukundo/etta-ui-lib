@@ -2,7 +2,9 @@
   "name": "@ettawallet/showcase-app",
   "description": "Preview Etta UI components in RN",
   "version": "1.0.2",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "react-native start",
     "start:reset": "react-native start --reset-cache",

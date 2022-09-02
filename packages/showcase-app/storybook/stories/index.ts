@@ -5,3 +5,4 @@ import './Text/Text.stories';
 import './BottomMenu/BottomMenu.stories';
 import './Switch/Switch.stories';
 import './ListItem/ListItem.stories';
+import './IconTextButton/IconTextButton.stories';

@@ -19,3 +19,7 @@ export {
   ListSectionProps,
   ListSubheaderProps,
 } from './components/atoms/List';
+export {
+  IconTextButton,
+  NativeIconTextButtonProps,
+} from './components/molecules/IconTextButton';

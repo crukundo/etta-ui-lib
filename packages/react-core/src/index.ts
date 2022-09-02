@@ -18,6 +18,11 @@ export {
   TouchableRippleProps,
 } from './components/atoms/TouchableRipple';
 export { Text, TextProps } from './components/atoms/Text';
+export {
+  IconComponent,
+  IconPositionOptions,
+  IconTextButtonProps,
+} from './components/molecules/IconTextButton';
 export { Divider, DividerProps } from './components/atoms/Divider';
 export { Switch, SwitchProps } from './components/atoms/Switch';
 
