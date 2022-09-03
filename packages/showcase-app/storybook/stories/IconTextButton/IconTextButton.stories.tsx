@@ -47,7 +47,7 @@ storiesOf('IconTextButton', module)
           iconProps={{
             name: 'icon-cloud',
           }}
-          label={'Rocket Icon!'}
+          label={'Cloud Icon!'}
         />
       </View>
 

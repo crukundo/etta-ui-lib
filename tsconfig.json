@@ -6,6 +6,7 @@
     "jsx": "react",
     "target": "esnext",
     "module": "esnext",
+    "lib": ["ESNext", "DOM"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "removeComments": true,

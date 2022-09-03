@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
 /**
  * @param initialState
@@ -10,14 +10,14 @@ export function useDebouncedState<S>(
   timeoutCallback?: (state: S) => void,
   timeoutMs = 166
 ): [S, Dispatch<SetStateAction<S>>] {
-  const timeoutId = useRef<number>();
+  let timeoutId: null | ReturnType<typeof setTimeout> = null;
 
   const [state, setState] = useState<S>(initialState);
 
   useEffect(() => {
-    if (timeoutId.current) clearTimeout(timeoutId.current);
+    if (timeoutId) clearTimeout(timeoutId);
     if (timeoutCallback)
-      timeoutId.current = setTimeout(() => timeoutCallback(state), timeoutMs);
+      timeoutId = setTimeout(() => timeoutCallback(state), timeoutMs);
   }, [state, timeoutCallback]);
 
   return [state, setState];

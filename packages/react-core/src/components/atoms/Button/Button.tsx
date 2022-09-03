@@ -76,7 +76,7 @@ const Button: FC<ButtonProps> = ({
   }
 
   if (disabled) {
-    _surfaceColor = theme.color[_color].neutral4;
+    _surfaceColor = theme.color[_color][tone];
   }
 
   return (

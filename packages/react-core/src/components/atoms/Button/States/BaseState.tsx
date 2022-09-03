@@ -7,10 +7,9 @@ import { Icon } from '../../Icon';
 import { Text } from '../../Text';
 import { ButtonStateProps } from '../Button';
 import { getStyledTextButton } from './styled';
-import { FilledIconName, OutlineIconName } from '@ettawallet/rn-bitcoin-icons';
 
 export interface BaseStateProps extends ButtonStateProps {
-  icon: FilledIconName | OutlineIconName;
+  icon: string;
 }
 
 export const BaseState: FC<BaseStateProps> = ({
@@ -26,7 +25,7 @@ export const BaseState: FC<BaseStateProps> = ({
   const StyledText = getStyledTextButton(textComponent);
   return (
     <>
-      <Icon name={icon} type="filled" fontColor={fontColor} size={iconSize} />
+      <Icon name={icon} fontColor={fontColor} size={iconSize} />
       {text && (
         <StyledText typography={typo} fontWeight="bold" fontColor={fontColor}>
           {text}

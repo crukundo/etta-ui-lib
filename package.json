@@ -77,7 +77,7 @@
     "prettify": "prettier --write ./**/*.{ts,tsx,json} && prettier --write *.{ts,tsx,json}",
     "bootstrap": "yarn build",
     "tsc": "tsc",
-    "prepare": "husky install",
+    "prepare": "husky install && yarn bootstrap",
     "storybook": "cross-env STORYBOOK_FONT_URL='' start-storybook -p 7007",
     "build-storybook": "rimraf -rf sbdocs/ && cross-env STORYBOOK_FONT_URL='/etta-ui-lib' build-storybook -o sbdocs/"
   },

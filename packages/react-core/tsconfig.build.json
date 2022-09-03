@@ -4,7 +4,8 @@
     "skipLibCheck": true,
     "declarationDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "resolveJsonModule": true
   },
   "include": ["./src"]
 }
