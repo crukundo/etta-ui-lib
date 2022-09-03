@@ -11,8 +11,6 @@ import {
   TouchableRipple,
   Text,
   ThemeProp,
-  StyleProps,
-  TextProps,
   EllipsizeProp,
   $RemoveChildren,
   FontWeightType,

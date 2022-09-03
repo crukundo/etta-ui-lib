@@ -43,7 +43,7 @@ const Button: FC<ButtonProps> = ({
   style,
   color = 'primary',
   variant = 'filled',
-  tone = 'orange',
+  tone = 'neutral4',
   state = 'default',
   loadingComponent,
   errorComponent,
@@ -72,6 +72,10 @@ const Button: FC<ButtonProps> = ({
 
   let _surfaceColor;
   if (variant === 'filled') {
+    _surfaceColor = theme.color[_color][tone];
+  }
+
+  if (variant === 'outlined') {
     _surfaceColor = theme.color[_color][tone];
   }
 
