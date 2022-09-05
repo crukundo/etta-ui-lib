@@ -24,7 +24,7 @@ const DepositBitcoin = ({ navigation }) => {
         color="primary"
         variant="filled"
         tone="orange"
-        onPress={() => navigation.navigate('ImproveSecurity')}
+        onPress={() => navigation.navigate('MainArea')}
       >
         <Text fontWeight="normal" fontColor="light">
           I made the deposit
