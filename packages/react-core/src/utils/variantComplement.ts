@@ -7,7 +7,7 @@ import {
 
 export const fontColorVC: Record<VariantType, FontColorType> = {
   filled: 'light',
-  outlined: 'light',
+  outlined: 'dark',
   text: 'dark',
 };
 

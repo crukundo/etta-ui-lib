@@ -13,7 +13,7 @@ import { PressableSurfaceProps } from '../PressableSurface';
 import { TextProps } from '../Text';
 import { StyledButton } from './styled';
 
-export type ButtonSizeType = 'small' | 'default';
+export type ButtonSizeType = 'small' | 'default' | 'large';
 
 export type ButtonStateType = 'loading' | 'error' | 'success' | 'default';
 

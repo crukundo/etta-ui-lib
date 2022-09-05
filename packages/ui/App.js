@@ -7,6 +7,7 @@ import SanityCheck from './src/screens/SanityCheckScreen';
 import Backup from './src/screens/BackUpScreen';
 import ImproveSecurity from './src/screens/ImproveSecurityScreen';
 import FundWallet from './src/screens/FundWalletScreen';
+import DepositBitcoin from './src/screens/DepositBitcoinScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ const App = () => {
           <Stack.Screen name="Backup" component={Backup} />
           <Stack.Screen name="ImproveSecurity" component={ImproveSecurity} />
           <Stack.Screen name="FundWallet" component={FundWallet} />
+          <Stack.Screen name="DepositBitcoin" component={DepositBitcoin} />
         </Stack.Navigator>
       </NavigationContainer>
     </ThemeProvider>

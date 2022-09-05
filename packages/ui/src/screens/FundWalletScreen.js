@@ -38,6 +38,7 @@ const FundWallet = ({ navigation }) => {
             <IconTextButton
               variant="text"
               iconProps={{ name: 'icon-caret-right' }}
+              onPress={() => navigation.navigate('DepositBitcoin')}
             />
           )}
           title="Receive bitcoin"

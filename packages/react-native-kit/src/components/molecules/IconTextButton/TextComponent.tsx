@@ -27,7 +27,7 @@ const TextComponent: FC<TextComponentProps> = ({
   return label ? (
     <StyledText
       typography={textProps?.typography ?? size === 'small' ? 'sub' : 'base'}
-      fontWeight={textProps?.fontWeight ?? 'bold'}
+      fontWeight={textProps?.fontWeight ?? 'semibold'}
       fontColor={textProps?.fontColor ?? defaultFontColor}
       iconPosition={iconPosition}
       hasIcon={hasIcon}

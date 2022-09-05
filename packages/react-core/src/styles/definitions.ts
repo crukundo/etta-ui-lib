@@ -61,7 +61,7 @@ export const spacing: Spacing = {
   mili: RFValueStr('8px'),
   centi: RFValueStr('12px'),
   deca: RFValueStr('16px'),
-  kilo: RFValueStr('24px'),
+  kilo: RFValueStr('20px'),
   mega: RFValueStr('32px'),
   giga: RFValueStr('40px'),
   tera: RFValueStr('48px'),
