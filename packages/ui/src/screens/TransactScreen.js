@@ -14,11 +14,18 @@ const Transact = ({ navigation }) => {
       <Text
         style={{ textAlign: 'center', marginBottom: 10 }}
         typography="h1"
-        fontWeight="regular"
+        fontWeight="bold"
         fontColor="dark"
-        fontStack="default" // should be mono. Fix error on numeric font fontFamily
       >
         {satsAmount} sats
+      </Text>
+      <Text
+        style={{ textAlign: 'center', marginBottom: 10 }}
+        typography="h5"
+        fontWeight="regular"
+        fontColor="dark"
+      >
+        10,000 UGX
       </Text>
       <VirtualKeyboard
         color="#48484a"
