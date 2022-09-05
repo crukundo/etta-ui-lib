@@ -30,7 +30,9 @@ const Transact = ({ navigation }) => {
       <VirtualKeyboard
         color="#48484a"
         pressMode="string"
-        decimal="true"
+        decimal
+        applyBackspaceTint
+        clearOnLongPress
         onPress={val => updateAmount(val)}
         rowStyle={{ marginTop: 50 }}
       />
