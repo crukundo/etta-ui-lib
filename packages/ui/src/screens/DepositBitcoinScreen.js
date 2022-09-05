@@ -1,14 +1,6 @@
 import React from 'react';
-import {
-  Text,
-  Button,
-  IconTextButton,
-  ListSection,
-  ListItem,
-  Divider,
-} from '@ettawallet/react-native-kit';
+import { Text, Button } from '@ettawallet/react-native-kit';
 import { View, StyleSheet } from 'react-native';
-import { Receive } from '@ettawallet/rn-bitcoin-icons/dist/filled';
 import QRCodeComponent from '../components/QRCodeComponent';
 
 const DepositBitcoin = ({ navigation }) => {
@@ -45,10 +37,10 @@ const DepositBitcoin = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 50,
     alignContent: 'space-between',
     justifyContent: 'center',
     padding: 20,
+    marginTop: 50, // kill this once we have headers
   },
   text: {
     marginBottom: 50,

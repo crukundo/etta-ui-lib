@@ -8,7 +8,7 @@ const QRCodeComponent = ({
   value,
   isLogoRendered = true,
   logoSize = 50,
-  size = 250,
+  size = 220,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   onError = () => {},
 }) => {

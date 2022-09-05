@@ -176,7 +176,7 @@ const ListItem = ({
   };
 
   const renderTitle = () => {
-    const titleColor = '#48484a';
+    const titleColor = '#000000';
 
     return typeof title === 'function' ? (
       title({

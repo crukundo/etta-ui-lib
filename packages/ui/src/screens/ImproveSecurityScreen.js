@@ -39,11 +39,13 @@ const ImproveSecurity = ({ navigation }) => {
           style={{ fontSize: 70 }}
           right={props => <Switch active={check} onChange={setCheck} />}
           title="PIN"
+          description="Set a PIN to protect your wallet from unauthorized access."
         />
         <Divider linePosition="bottom" />
         <ListItem
           right={props => <Switch active={check} onChange={setCheck} />}
           title="Face ID"
+          description="Require detection of your face for wallet access."
         />
       </ListSection>
       <Divider style={{ marginTop: -4 }} linePosition="bottom" />
