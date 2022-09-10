@@ -28,6 +28,7 @@ export interface TextProps {
   ellipsizeMode?: 'head' | 'middle' | 'tail' | 'clip';
   textTransform?: 'none' | 'uppercase' | 'lowercase' | 'capitalize';
   capitalFirst?: boolean;
+  selectable?: boolean;
   style?: StyleProp<TextStyle>;
   children?: React.ReactNode;
 }

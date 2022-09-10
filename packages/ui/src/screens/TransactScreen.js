@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Text, IconTextButton } from '@ettawallet/react-native-kit';
-import { View, StyleSheet } from 'react-native';
+import { Text, IconTextButton, Chip } from '@ettawallet/react-native-kit';
+import { View, StyleSheet, Image } from 'react-native';
 import VirtualKeyboard from 'react-native-virtual-keyboard';
 
 const Transact = ({ navigation }) => {
@@ -9,8 +9,19 @@ const Transact = ({ navigation }) => {
   const updateAmount = newAmount => {
     setSatsAmount(newAmount);
   };
+
   return (
     <View style={styles.container}>
+      <Chip
+        mode="outlined"
+        icon="icon-bitcoin-circle"
+        onPress={() => {
+          console.log('clicked chip!');
+        }}
+        style={[styles.chip, styles.customBorderRadius]}
+      >
+        Receiving 10,000,000 sats
+      </Chip>
       <Text
         style={{ textAlign: 'center', marginBottom: 10 }}
         typography="h1"
@@ -78,6 +89,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     marginTop: 'auto',
     marginBottom: 20,
+  },
+  chip: {
+    margin: 4,
+    marginBottom: 20,
+  },
+  customBorderRadius: {
+    borderRadius: 16,
   },
 });
 

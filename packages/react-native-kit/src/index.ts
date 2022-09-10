@@ -23,3 +23,4 @@ export {
   IconTextButton,
   NativeIconTextButtonProps,
 } from './components/molecules/IconTextButton';
+export { Chip, ChipProps } from './components/atoms/Chip';

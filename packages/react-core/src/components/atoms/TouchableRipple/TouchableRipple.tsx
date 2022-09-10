@@ -2,7 +2,12 @@
 
 import { useTheme } from '@emotion/react';
 import React, { FC, ReactElement } from 'react';
-import { TouchableHighlight, StyleProp, ViewStyle } from 'react-native';
+import {
+  TouchableHighlight,
+  StyleProp,
+  ViewStyle,
+  GestureResponderEvent,
+} from 'react-native';
 // import { ThemeProp } from '../../../types/defaults';
 
 export type TouchableRippleColors = 'primary' | 'secondary' | 'highlight';
@@ -11,7 +16,11 @@ export interface TouchableRippleProps {
   /**
    * Children component
    */
-  children?: ReactElement;
+  children?: React.ReactNode;
+  /**
+   * Whether to render the ripple outside the view bounds.
+   */
+  borderless?: boolean;
   /**
    * Ripple color: `primary` | `secondary` | `highlight`
    * @default: `primary`
@@ -33,7 +42,10 @@ export interface TouchableRippleProps {
    * Will be called as soon the ripple animation start
    */
   onPress?: () => void;
-
+  /**
+   * Function to execute on long press.
+   */
+  onLongPress?: (e: GestureResponderEvent) => void;
   style?: StyleProp<ViewStyle>;
 }
 

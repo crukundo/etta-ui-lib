@@ -28,6 +28,7 @@ export { Switch, SwitchProps } from './components/atoms/Switch';
 
 export * from './styles/definitions';
 export * from './styles/light';
+export * from './styles/shadow';
 export { default as ThemeProvider } from './styles/ThemeProvider';
 export * from './types/defaults';
 export * from './utils';

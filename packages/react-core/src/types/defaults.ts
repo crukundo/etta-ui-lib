@@ -5,6 +5,7 @@ export type Color = {
   success: ColorGradation;
   info: ColorGradation;
   warning: ColorGradation;
+  elevation: ElevationColors;
 };
 
 export type TypographyVariation = {
@@ -146,6 +147,9 @@ export type ThemeProp = {
     files: FontWeight;
   };
   zIndex: ZIndex;
+  animation: {
+    scale: number;
+  };
 };
 
 export interface ThemeProviderProps {
@@ -183,3 +187,18 @@ export type $RemoveChildren<T extends React.ComponentType<any>> = $Omit<
 >;
 
 export type EllipsizeProp = 'head' | 'middle' | 'tail' | 'clip';
+
+export type Elevation = 0 | 1 | 2 | 3 | 4 | 5;
+
+export enum ElevationLevels {
+  'level0',
+  'level1',
+  'level2',
+  'level3',
+  'level4',
+  'level5',
+}
+
+export type ElevationColors = {
+  [key in keyof typeof ElevationLevels]: string;
+};
