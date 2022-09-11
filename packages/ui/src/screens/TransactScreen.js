@@ -16,7 +16,7 @@ const Transact = ({ navigation }) => {
         mode="outlined"
         icon="icon-bitcoin-circle"
         onPress={() => {
-          console.log('clicked chip!');
+          navigation.navigate('TransactionDetail');
         }}
         style={[styles.chip, styles.customBorderRadius]}
       >

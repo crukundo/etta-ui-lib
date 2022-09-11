@@ -58,7 +58,7 @@ const getDefaultBackgroundColor = ({
     return theme.color.primary.neutral4;
   }
 
-  return theme.color.primary.neutral2;
+  return theme.color.primary.neutral4;
 };
 
 const getBackgroundColor = ({

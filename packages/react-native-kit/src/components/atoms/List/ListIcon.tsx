@@ -34,7 +34,7 @@ export type ListIconProps = {
  */
 const ListIcon = ({ icon, style }: ListIconProps) => (
   <View style={[styles.item, style]} pointerEvents="box-none">
-    <Icon name={icon} size="mega" />
+    <Icon name={icon} size="kilo" />
   </View>
 );
 

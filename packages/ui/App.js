@@ -10,6 +10,7 @@ import ImproveSecurity from './src/screens/ImproveSecurityScreen';
 import FundWallet from './src/screens/FundWalletScreen';
 import DepositBitcoin from './src/screens/DepositBitcoinScreen';
 import Transact from './src/screens/TransactScreen';
+import TransactionDetail from './src/screens/TransactionDetailScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -87,6 +88,10 @@ const App = () => {
           <Stack.Screen name="FundWallet" component={FundWallet} />
           <Stack.Screen name="DepositBitcoin" component={DepositBitcoin} />
           <Stack.Screen name="MainArea" component={MainScreenNavigation} />
+          <Stack.Screen
+            name="TransactionDetail"
+            component={TransactionDetail}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </ThemeProvider>
