@@ -59,28 +59,16 @@ const TransactionDetail = ({ navigation }) => {
         />
         <Divider style={{ marginTop: -10 }} linePosition="bottom" />
         <ListItem
-          title="Add a note"
-          left={props => (
-            <IconTextButton
-              variant="text"
-              iconProps={{ name: 'icon-edit', size: 'deca' }}
-              onPress={() => console.log('add a note')}
-            />
-          )}
+          onPress={() => console.log('add a note')}
+          title="Note"
+          left={props => <ListIcon {...props} icon="icon-edit" />}
         />
-        <Divider style={{ marginTop: -10 }} linePosition="bottom" />
         <ListItem
+          onPress={() => console.log('add a tag')}
           title="Tags"
-          left={props => (
-            <IconTextButton
-              variant="text"
-              iconProps={{ name: 'icon-tag', size: 'kilo' }}
-              onPress={() => console.log('add tag')}
-            />
-          )}
+          left={props => <ListIcon {...props} icon="icon-tag" />}
         />
       </ListSection>
-      <Divider style={{ marginTop: -10 }} linePosition="bottom" />
       <Button
         style={styles.button}
         color="secondary"
